@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -65,5 +67,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Futura PT', sans-serif;
   }
 }

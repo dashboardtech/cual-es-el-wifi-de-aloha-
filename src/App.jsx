@@ -80,6 +80,9 @@ const WifiQRCodeGenerator = () => {
       <Card className="w-[380px]">
         <CardHeader>
           <CardTitle>🛜 Cual es el Wi-Fi de ALOHA?</CardTitle>
+          <p className="text-sm text-muted-foreground mt-1">
+            Generador de QR para centros ALOHA Panamá
+          </p>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2" onChange={generateQRCode}>
@@ -129,6 +132,17 @@ const WifiQRCodeGenerator = () => {
           )}
         </CardContent>
       </Card>
+
+      <footer className="mt-8 text-center text-sm text-gray-500 border-t w-full pt-4 pb-2">
+        <div className="max-w-[380px] mx-auto">
+          <p className="hover:text-gray-700 transition-colors">
+            <a href="mailto:info@alohapanama.com">info@alohapanama.com</a>
+          </p>
+          <p className="mt-1 font-light">
+            Desarrollado por ALOHA Panamá
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
