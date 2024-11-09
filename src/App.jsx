@@ -70,42 +70,48 @@ const WifiQRCodeGenerator = () => {
   };
 
   return (
-    <div className="h-screen flex items-center">
-      <Card className="w-full max-w-md mx-auto">
+    <div className="flex flex-col items-center min-h-screen py-10">
+      <img 
+        src="/logo-aloha.png"
+        alt="Logo ALOHA" 
+        className="h-24 mb-6"
+      />
+      
+      <Card className="w-[380px]">
         <CardHeader>
-          <CardTitle>🛜 What's the Wi-Fi?</CardTitle>
+          <CardTitle>🛜 Cual es el Wi-Fi de ALOHA?</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2" onChange={generateQRCode}>
-            <Label htmlFor="ssid">Wi-Fi Name (SSID)</Label>
+            <Label htmlFor="ssid">Nombre del Wifi (SSID)</Label>
             <Input
               id="ssid"
               value={ssid}
               onChange={(e) => setSsid(e.target.value)}
-              placeholder="Enter Wi-Fi name"
+              placeholder="Escriba el nombre del Wifi"
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">Contraseña</Label>
             <PasswordInput
               id="password"
               type="password"
               value={password}
               onChange={setPassword}
-              placeholder="Enter Wi-Fi password"
+              placeholder="Escriba la contraseña"
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="authType">Authentication Type</Label>
+            <Label htmlFor="authType">Tipo de Seguridad</Label>
             <Select value={authType} onValueChange={setAuthType}>
               <SelectTrigger id="authType">
-                <SelectValue placeholder="Select auth type" />
+                <SelectValue placeholder="Seleccione el tipo" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="WPA">WPA/WPA2</SelectItem>
                 <SelectItem value="WEP">WEP</SelectItem>
                 <SelectItem value="WPA2-EAP">WPA2-EAP</SelectItem>
-                <SelectItem value="nopass">No Password</SelectItem>
+                <SelectItem value="nopass">Sin Contraseña</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -117,7 +123,7 @@ const WifiQRCodeGenerator = () => {
           {showQR && (
             <div className="flex justify-center mt-4 space-x-4">
               <Button onClick={downloadAsPNG} className="w-full">
-                Download QR Code
+                Descargar Código QR
               </Button>
             </div>
           )}

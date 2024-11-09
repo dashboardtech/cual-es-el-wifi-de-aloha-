@@ -1,7 +1,12 @@
 {
-  "name": "wifi-qr",
+  "name": "cual-es-el-wifi-de-aloha",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Generador de códigos QR para redes WiFi de ALOHA",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/cual-es-el-wifi-de-aloha.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
