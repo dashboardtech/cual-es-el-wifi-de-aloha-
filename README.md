@@ -1,26 +1,23 @@
-# What's the WiFi?
+# ¿Cuál es el WiFi de ALOHA?
 
-This is a React web app for generating QR codes for WiFi networks. 
+Aplicación web para generar códigos QR de las redes WiFi de ALOHA.
 
-<div align="center" >
-  <img src="whats-the-wifi-sq.gif" width=50%/>
-</div>
+## Características
 
-You can check it out here: https://whats-the-wifi.replit.app
+- Genera códigos QR para redes WiFi
+- Soporta diferentes tipos de seguridad (WPA/WPA2, WEP, etc.)
+- Descarga el código QR como imagen PNG
+- Interfaz en español
+- Diseño responsive
 
-## Usage
+## Tecnologías
 
-To start the dev server, click "Run" or execute `npm run dev` in the Shell. You'll see a Webview pane with the app.
+- React
+- Vite
+- Tailwind CSS
+- shadcn/ui
 
-Enter an SSID, password, and encryption method to generate a QR Code and download it.
+## Desarrollo
 
-## How does it work?
-
-This is a React app written in JavaScript. It uses the [shadcn/ui](ui.shadcn.com), which is a component library built on Tailwind CSS.
-
-`App.jsx` holds the logic for the application, including state management variables and event handlers. 
-
-The app uses [Vite](https://vitejs.dev/) for a development framework to make the build + deploy process super easy— see [package.json](package.json) for a list of commands. 
-
-This Repl comes pre-bundled with everything you need to deploy the exact same app. Just head over to the "Deployments" tab to get started. 
+Para ejecutar el proyecto localmente:
 
